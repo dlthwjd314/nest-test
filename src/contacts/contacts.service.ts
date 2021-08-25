@@ -16,10 +16,10 @@ export class ContactsService {
     }
 
     async create(
-        contacCreateInput: Prisma.ContactCreateInput,
+        contactCreateInput: Prisma.ContactCreateInput,
     ): Promise<Contact> {
         return await this.prisma.contact.create({
-            data: contacCreateInput,
+            data: contactCreateInput,
         });
     }
 
